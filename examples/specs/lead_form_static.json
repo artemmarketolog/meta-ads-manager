@@ -1,0 +1,58 @@
+{
+  "client": "coffee-house",
+  "label": "form-franchise",
+  "task": "Лид-форма: заявки на франшизу",
+  "account_id": "act_000000000000000",
+  "scenario": "lead_form_static",
+  "bindings": {
+    "page_id": "100000000000000",
+    "instagram_user_id": "17840000000000000",
+    "lead_gen_form_id": "1000000000000001"
+  },
+  "media": {
+    "poster": {
+      "file": "media/poster.png"
+    }
+  },
+  "defaults": {
+    "adset": {
+      "daily_budget": 2000,
+      "start_time": "2026-11-05T00:10:00+05:00",
+      "targeting": {
+        "age_min": 25,
+        "age_max": 55,
+        "genders": [
+          1,
+          2
+        ],
+        "geo_locations": {
+          "countries": [
+            "KZ"
+          ]
+        }
+      }
+    },
+    "creative": {
+      "message": "Откройте кофейню по нашей франшизе: окупаемость от 8 месяцев. Оставьте контакты — пришлём расчёт.",
+      "headline": "Франшиза кофейни",
+      "creative_mode": "asset_feed",
+      "focus": "0.45"
+    }
+  },
+  "campaigns": [
+    {
+      "name": "[kz] | lead form | франшиза | 05.11",
+      "adsets": [
+        {
+          "name": "Франшиза баннер | 25+ все | 05.11",
+          "ads": [
+            {
+              "name": "Франшиза баннер",
+              "media": "poster"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

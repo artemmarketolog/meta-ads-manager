@@ -1,0 +1,85 @@
+{
+  "client": "coffee-house",
+  "label": "wa-cappuccino",
+  "task": "Реклама в WhatsApp: баннер, Алматы, 10 в день",
+  "account_id": "act_000000000000000",
+  "scenario": "ctwa_static",
+  "bindings": {
+    "page_id": "100000000000000",
+    "instagram_user_id": "17840000000000000",
+    "whatsapp_phone_number": "77001234567"
+  },
+  "media": {
+    "poster": {
+      "file": "media/poster.png"
+    }
+  },
+  "defaults": {
+    "adset": {
+      "daily_budget": 1000,
+      "start_time": "2026-11-05T00:10:00+05:00",
+      "targeting": {
+        "age_min": 25,
+        "age_max": 55,
+        "genders": [
+          1,
+          2
+        ],
+        "geo_locations": {
+          "cities": [
+            {
+              "key": "1289662"
+            }
+          ],
+          "location_types": [
+            "home",
+            "recent"
+          ]
+        }
+      }
+    },
+    "creative": {
+      "message": "Капучино с собой — второй в подарок до 11:00 по будням. Напишите нам в WhatsApp, подскажем ближайшую кофейню.",
+      "headline": "Второй капучино в подарок",
+      "page_welcome_message": {
+        "type": "VISUAL_EDITOR",
+        "version": 2,
+        "landing_screen_type": "welcome_message",
+        "media_type": "text",
+        "text_format": {
+          "customer_action_type": "ice_breakers",
+          "message": {
+            "text": "Здравствуйте! Выберите вопрос",
+            "ice_breakers": [
+              {
+                "title": "Сколько стоит?"
+              },
+              {
+                "title": "Где вы находитесь?"
+              },
+              {
+                "title": "Есть доставка?"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "campaigns": [
+    {
+      "name": "[almaty] | whatsapp | кофе с собой | 05.11",
+      "adsets": [
+        {
+          "name": "Капучино баннер | 25+ все | 05.11",
+          "ads": [
+            {
+              "name": "Капучино баннер",
+              "media": "poster"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "client": "coffee-house",
+  "label": "direct-cakes",
+  "task": "Сообщения в Instagram Direct: торты на заказ",
+  "account_id": "act_000000000000000",
+  "scenario": "ig_direct_static",
+  "bindings": {
+    "page_id": "100000000000000",
+    "instagram_user_id": "17840000000000000"
+  },
+  "media": {
+    "poster": {
+      "file": "media/poster.png"
+    }
+  },
+  "defaults": {
+    "adset": {
+      "daily_budget": 800,
+      "start_time": "2026-11-05T00:10:00+05:00",
+      "targeting": {
+        "age_min": 25,
+        "age_max": 55,
+        "genders": [
+          1,
+          2
+        ],
+        "geo_locations": {
+          "cities": [
+            {
+              "key": "1289662"
+            }
+          ],
+          "location_types": [
+            "home",
+            "recent"
+          ]
+        }
+      }
+    },
+    "creative": {
+      "message": "Торты на заказ к выходным. Напишите в Direct — пришлём меню и цены.",
+      "headline": "Торты на заказ"
+    }
+  },
+  "campaigns": [
+    {
+      "name": "[almaty] | direct | торты на заказ | 05.11",
+      "adsets": [
+        {
+          "name": "Торт баннер | 25+ все | 05.11",
+          "ads": [
+            {
+              "name": "Торт баннер",
+              "media": "poster"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

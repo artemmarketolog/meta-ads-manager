@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+*.env
+!meta.env.example
+clients.json
+state/
+logs/
+*.log
+.DS_Store

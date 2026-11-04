@@ -1,0 +1,58 @@
+{
+  "client": "coffee-house",
+  "label": "boost-reel",
+  "task": "Продвинуть готовый рилс на профиль (как «Продвигать», но по методу)",
+  "account_id": "act_000000000000000",
+  "scenario": "ig_profile_post",
+  "bindings": {
+    "page_id": "100000000000000",
+    "instagram_user_id": "17840000000000000",
+    "instagram_username": "coffee.house.example"
+  },
+  "media": {
+    "reel": {
+      "ig_media_id": "18000000000000000"
+    }
+  },
+  "defaults": {
+    "adset": {
+      "daily_budget": 500,
+      "start_time": "2026-11-05T00:10:00+05:00",
+      "targeting": {
+        "age_min": 25,
+        "age_max": 55,
+        "genders": [
+          1,
+          2
+        ],
+        "geo_locations": {
+          "cities": [
+            {
+              "key": "1289662"
+            }
+          ],
+          "location_types": [
+            "home",
+            "recent"
+          ]
+        }
+      }
+    }
+  },
+  "campaigns": [
+    {
+      "name": "[almaty] | profile | рилс бариста | 05.11",
+      "adsets": [
+        {
+          "name": "Рилс бариста пост | 25+ все | 05.11",
+          "ads": [
+            {
+              "name": "Рилс бариста пост",
+              "media": "reel"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

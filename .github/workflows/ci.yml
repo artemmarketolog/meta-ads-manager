@@ -1,0 +1,23 @@
+name: ci
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install -r requirements.txt
+      - run: python -m unittest discover -s tests -v
+      - name: example specs (dry-run, no network)
+        env: {META_ADS_CONFIG_DIR: /tmp/cfg, META_ADS_DATA_DIR: /tmp/data}
+        run: for f in examples/specs/*.json; do python scripts/meta_launch.py --spec "$f" --dry-run > /dev/null; done
+  secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - uses: gitleaks/gitleaks-action@v2
+        env: {GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'}

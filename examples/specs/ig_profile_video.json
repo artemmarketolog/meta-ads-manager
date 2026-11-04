@@ -1,0 +1,62 @@
+{
+  "client": "coffee-house",
+  "label": "profile-video",
+  "task": "Трафик на профиль Instagram: наш ролик",
+  "account_id": "act_000000000000000",
+  "scenario": "ig_profile_video",
+  "bindings": {
+    "page_id": "100000000000000",
+    "instagram_user_id": "17840000000000000",
+    "instagram_username": "coffee.house.example"
+  },
+  "media": {
+    "vid": {
+      "file": "media/video.mp4",
+      "thumbnail": "media/cover.jpg"
+    }
+  },
+  "defaults": {
+    "adset": {
+      "daily_budget": 700,
+      "start_time": "2026-11-05T00:10:00+05:00",
+      "targeting": {
+        "age_min": 25,
+        "age_max": 55,
+        "genders": [
+          1,
+          2
+        ],
+        "geo_locations": {
+          "cities": [
+            {
+              "key": "1289662"
+            }
+          ],
+          "location_types": [
+            "home",
+            "recent"
+          ]
+        }
+      }
+    },
+    "creative": {
+      "message": "Новое осеннее меню — смотрите в профиле."
+    }
+  },
+  "campaigns": [
+    {
+      "name": "[almaty] | profile | осеннее меню | 05.11",
+      "adsets": [
+        {
+          "name": "Осеннее меню ролик | 25+ все | 05.11",
+          "ads": [
+            {
+              "name": "Осеннее меню ролик",
+              "media": "vid"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

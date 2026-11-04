@@ -1,0 +1,22 @@
+{
+  "clients": {
+    "coffee-house": {
+      "name": "Coffee House",
+      "aliases": [
+        "кофейня",
+        "кофе"
+      ],
+      "account_id": "act_000000000000000",
+      "currency": "USD",
+      "timezone": "Asia/Almaty",
+      "page_id": "100000000000000",
+      "instagram_user_id": "17840000000000000",
+      "instagram_username": "coffee.house.example",
+      "whatsapp_phone_number": "77001234567",
+      "pixel_id": "1000000000000000",
+      "lead_gen_form_id": "1000000000000001",
+      "geo": "almaty",
+      "notes": "Только Instagram и Threads. Без слова «скидка» — клиент просит «подарок». Креативы показывать до запуска."
+    }
+  }
+}

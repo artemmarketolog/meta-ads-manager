@@ -1,0 +1,6 @@
+interface:
+  display_name: "Meta Ads Manager"
+  short_description: "Реклама Instagram, Threads и WhatsApp через Marketing API по одному методу"
+  default_prompt: "Используй $meta-ads-manager: если токена нет — подключи меня к Meta по references/onboarding.md; иначе собери спеку, проверь её в Meta, посмотри лист превью и отчитайся."
+policy:
+  allow_implicit_invocation: true

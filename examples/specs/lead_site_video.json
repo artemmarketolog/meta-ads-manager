@@ -1,0 +1,65 @@
+{
+  "client": "coffee-house",
+  "label": "site-video",
+  "task": "Заявки на сайт с пикселем, ролик со своей обложкой",
+  "account_id": "act_000000000000000",
+  "scenario": "lead_site_video",
+  "bindings": {
+    "page_id": "100000000000000",
+    "instagram_user_id": "17840000000000000",
+    "pixel_id": "1000000000000000"
+  },
+  "media": {
+    "vid": {
+      "file": "media/video.mp4",
+      "thumbnail": "media/cover.jpg"
+    }
+  },
+  "defaults": {
+    "adset": {
+      "daily_budget": 1500,
+      "start_time": "2026-11-05T00:10:00+05:00",
+      "targeting": {
+        "age_min": 25,
+        "age_max": 55,
+        "genders": [
+          1,
+          2
+        ],
+        "geo_locations": {
+          "cities": [
+            {
+              "key": "1289662"
+            }
+          ],
+          "location_types": [
+            "home",
+            "recent"
+          ]
+        }
+      }
+    },
+    "creative": {
+      "message": "Корпоративный кофе для офиса: зерно, машина и бариста на месте. Оставьте заявку — посчитаем за 10 минут.",
+      "headline": "Кофе для офиса",
+      "link": "https://example.com/office-coffee",
+      "cta_type": "LEARN_MORE"
+    }
+  },
+  "campaigns": [
+    {
+      "name": "[almaty] | lead site | кофе для офиса | 05.11",
+      "adsets": [
+        {
+          "name": "Бариста в офисе ролик | 25+ все | 05.11",
+          "ads": [
+            {
+              "name": "Бариста в офисе ролик",
+              "media": "vid"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
